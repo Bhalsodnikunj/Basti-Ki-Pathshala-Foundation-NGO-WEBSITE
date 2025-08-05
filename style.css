@@ -1,0 +1,199 @@
+
+html, body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+/* 🌐 Custom Navbar Base */
+.custom-navbar {
+  background-color: #3e9096; /* Custom dark background */
+  padding: 0.10rem 1rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Segoe UI', sans-serif;
+  z-index: 1000;
+}
+
+
+/* 🌟 Logo Image Styling */
+.custom-navbar .logo-img {
+  width: 40px;
+  height: 40px;
+   font-size: 1rem;
+  border-radius: 0%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.custom-navbar .navbar-brand:hover .logo-img {
+  transform: scale(1.1);
+}
+
+/* 🔗 Navbar Link Styles */
+.custom-navbar .nav-link {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  padding: 0.5rem 0.75rem;
+}
+
+/* 🟡 Active & Hover Effects */
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+  color: #fdd835; /* Yellow highlight */
+  background-color: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+}
+
+/* 📱 Toggler Button */
+.custom-navbar .navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+/* 📦 Shadow on Scroll (optional if needed) */
+.custom-navbar.scrolled {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  background-color: #4d91a5 !important;
+}
+.hero-section {
+  background: linear-gradient(135deg, rgba(15, 32, 39, 0.8), rgba(32, 58, 67, 0.8), rgba(44, 83, 100, 0.8)),
+              url('education.jpeg') center/cover no-repeat;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content {
+  transform: rotateX(0deg) rotateY(0deg);
+  transition: transform 0.5s ease;
+}
+
+.hero-section:hover .hero-content {
+  transform: rotateX(0deg) rotateY(0deg) scale(1.05);
+}
+
+
+.about-section {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+.about-section h2 {
+  font-weight: 700;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.about-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-top: 0px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+
+
+
+
+#join-team p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+#join-team .btn-warning {
+  background-color: #fdd835;
+  border-color: #fdd835;
+  
+}
+
+#join-team .btn-outline-light:hover {
+  background-color: #fdd835;
+  
+}
+
+ footer {
+      background: #4d91a5;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+  
+
+
+/* ✅ Call to Action Section CSS */
+.cta-section {
+  background: url('Our Impact photo.jpg') center center/cover no-repeat;
+  position: relative;
+  padding: 80px 20px;
+  color: #fff;
+}
+
+.cta-overlay {
+ 
+  padding: 60px 20px;
+  border-radius: 15px;
+}
+
+.cta-heading {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cta-text {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  background-color: #4d91a5;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #4d91a5;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+.btn-outline:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cta-heading {
+    font-size: 2rem;
+  }
+
+  .cta-text {
+    font-size: 1rem;
+  }
+}
+

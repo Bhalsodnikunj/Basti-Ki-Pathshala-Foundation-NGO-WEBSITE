@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thank You</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+           background: linear-gradient(to right, #141e30, #243b55);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .container {
+      max-width: 600px;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 1s ease forwards;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+      animation: slideDown 1s ease forwards;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      line-height: 1.6;
+      animation: slideUp 1s ease forwards;
+    }
+
+    .btn-home {
+      padding: 12px 25px;
+      border: none;
+      background: #ffffff;
+      color: #2a5298;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s ease;
+      text-decoration: none;
+      animation: bounce 2s infinite;
+    }
+
+    .btn-home:hover {
+      background: #ffce00;
+      color: #000;
+    }
+
+    @keyframes fadeIn {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
+    }
+
+    @keyframes slideDown {
+      0% {transform: translateY(-40px); opacity: 0;}
+      100% {transform: translateY(0); opacity: 1;}
+    }
+
+    @keyframes slideUp {
+      0% {transform: translateY(40px); opacity: 0;}
+      100% {transform: translateY(0); opacity: 1;}
+    }
+
+    @keyframes bounce {
+      0%, 100% {transform: translateY(0);}
+      50% {transform: translateY(-8px);}
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>🎉 Thank You!</h1>
+    <p>Your submission has been received. <br> We’ll get back to you as soon as possible!</p>
+    <a href="index.html" class="btn-home">Back to Home</a>
+  </div>
+
+</body>
+</html>
